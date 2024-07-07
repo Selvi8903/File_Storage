@@ -1,0 +1,94 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: rgb(117, 110, 110);
+  box-shadow: rgba(155, 145, 145, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: fixed;
+  bottom: 20px; /* Adjust this value to set distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.title,
+.body,
+.footer {
+  text-align: center;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: rgb(147, 20, 220);
+}
+
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+#selectNumber {
+  margin-left: auto; /* Move the select area to the right */
+  margin-right: auto; /* Center horizontally */
+  width: 330px; /* Adjust width as needed */
+}
